@@ -209,12 +209,20 @@
   $(window).on('scroll', function(){
     var scroll = $(window).scrollTop();
     if (scroll > 0) {
-	  $("#header-nav").css("background-color" , "#f76543");
-	  }
+	  $("#header-nav").css({"background-color":"white"});
+    $("#header-nav h1").css("color" , "#02b3e4");
+	  $("#header-nav a").css("color" , "#02b3e4");
+    $("#header-nav button").css("color" , "#f1f1f1");
+    $("#header-nav button").css("background-color" , "#02b3e4");   
+    }
 
 	else if(scroll <= 0){
-	  $("#header-nav").css("background-color" , "transparent");  	
-	}
+	  $("#header-nav").css("background-color" , "transparent"); 
+    $("#header-nav h1").css("color" , "#f1f1f1");  	
+    $("#header-nav a").css("color" , "#f1f1f1");
+    $("#header-nav button").css("background-color" , "#FF8DB2");
+    $("#header-nav button").css("color" , "#f1f1f1");
+  }
   });
 
 //function to change color and position while clicking the nav icon on small screen
